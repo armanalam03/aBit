@@ -1,0 +1,56 @@
+.about-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cover-photo-container{
+  width: 100%;
+  height: 400px;
+  background-image: url('https://s3-alpha-sig.figma.com/img/476d/21b6/b66d780a7fbb10091dc98cfc3c3974b4?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WOLFGBWgO7o7xtyUWi78HlhehDSr2qpDvGXjNaNzO~BjdmAu~ZfVUiaFPrh6WWi7nfn88vbAazOYERqxqCaPvo1v31riwj9qINM~ZaCiyxj9-eSOXod9YzpxEyGM0icddt-xjd0VMaHK4FH9VqJKCjpG4W4laY1ir9PZ9GCv-GpyLKTQNZ-hrBFlvaJ2qtnTvc5v6VOgtM-X4koEgzJKkkDE2kwXRM8mh9QXP8~wn0CwH3Leph9LUXvHyQBB~EOwajo2TTd4QMc22wbDUtl2l2LCaJ349vaPshvIAOeCbuq4OxuK~uX1JBqt0OKq1ln4lLxU5P-BMn8iIQX4auuFSg__');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.band{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 1.5rem 0rem;
+  background-color: #292828;
+  text-wrap: nowrap;
+}
+
+.band-text{
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+}
+
+@media screen and (max-width: 425px){
+  .about-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .cover-photo-container{
+    width: 100%;
+    height: 200px;
+  }
+  
+  .band{
+    padding: .5rem 0rem;
+    background-color: #292828;
+    text-wrap: nowrap;
+  }
+  
+  .band-text{
+    font-size: 6px;
+  }
+}

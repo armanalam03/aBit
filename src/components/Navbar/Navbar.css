@@ -1,0 +1,92 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(243, 243, 243);
+}
+
+.company-name{
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  margin-left: 3rem;
+  font-family: Inter;
+}
+
+.navbar-aside{
+  display: flex;
+  align-items: center;
+}
+
+.share-video-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100vh;
+  border: 2px solid #764CC2;
+  font-size: 12px;
+  color: #764CC2;
+  padding: .4rem .7rem;
+  margin-right: .5rem;
+  transition: 200ms all ease-in-out;
+  cursor: pointer;
+}
+
+.share-video-btn:hover{
+  background-color: #764CC2;
+  color: white;
+}
+
+.icon{
+  margin: 0rem .5rem;
+  opacity: .4;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.icon:hover{
+  opacity: .6;
+}
+
+.wallet-icon{
+  width: 28px;
+  margin: 0rem .5rem;
+}
+
+.notification-icon{
+  width: 36px;
+}
+
+.profile-icon{
+  width: 36px;
+  border-radius: 50%;
+  border: 2px solid black;
+  opacity: 1;
+}
+
+.profile-icon:hover{
+  opacity: 1;
+}
+
+.more-icon{
+  width: 24px;
+}
+
+@media screen and (max-width: 425px){
+  .navbar{
+    padding: 1.5rem 1.5rem;
+  }
+
+  .company-name{
+    font-size: 20px;
+    margin-left: 0rem;
+  }
+
+  .wallet-icon, .notification-icon{
+    display: none;
+  }
+}

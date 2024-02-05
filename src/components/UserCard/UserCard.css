@@ -1,0 +1,175 @@
+.user-card {
+  display: flex;
+  border-radius: 2rem;
+  /* height: 234px; */
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.3);
+  width: 571px;
+  aspect-ratio: 2.5/1;
+  position: absolute;
+  overflow: hidden;
+  left: 100px;
+  top: 300px;
+  background-color: white;
+}
+
+.user-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('https://s3-alpha-sig.figma.com/img/bdd1/217e/3c90f0a2a0733a37cfae73337e1beb01?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hoYheRDZ28XfJQ90I6Tdd321I5uUHhqZTK-7IpRDNEDNu6CGDN8v6A9CqD6AjE8RitYm5A79NlJ1T9HPXaxQLBxkFFZpaS4dlPfxisIA3HwYd0Zi7PDJ~qeHovTPiiLNR3SejeHbb1YTLSmHV1f6nZkHgdqR6XOinKDqjaeHcLdwDMWmNccZ7F2Ti7o9R7I6ofrfnv~kPv67dRfrDkubwiBeGCNr9wxIkHrWoNyw4-qVLGSHdFvxPgJmpSzq4wULXd-~h3epjNj2fXA8FB3a7DSRa3QdXXOSOA1bQVOdfkfGDEIbjNzjpfThileJoh2M4A1joK6J2A3FAtvlL~03fw__');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.user-profile-image{
+  /* width: 234px; */
+  /* height: 234px; */
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-right: 2px solid black;
+  z-index: 3;
+}
+
+.user-info-container{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.user-name{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.user-firm{
+  font-size: 14px;
+  color: #696969;
+}
+
+.user-bio{
+  display: flex;
+  flex-direction: column;
+  color: #696969;
+}
+
+.bio-heading{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.bio{
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: .2rem;
+}
+
+.user-role-container{
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgb(82, 82, 82);
+}
+
+.user-role{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .3rem;
+  width: 50%;
+  background-color: rgb(229, 229, 229);
+  border-right: 2px solid black;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px){
+  .user-card {
+    border-radius: 1.2rem;
+    width: 440px;
+    left: 80px;
+    top: 330px;
+  }
+
+  .user-info-container{
+    padding: 1.1rem;
+  }
+  
+  .user-name{
+    font-size: 20px;
+  }
+  
+  .user-firm{
+    font-size: 12px;
+  }
+  
+  .bio-heading{
+    font-size: 15px;
+  }
+  
+  .bio{
+    font-size: 13px;
+  }
+  
+  .user-role{
+    padding: .1rem;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .user-card {
+    left: 80px;
+    top: 330px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .user-card {
+    border-radius: .5rem;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+  }
+
+  .user-info-container{
+    padding: .8rem;
+  }
+  
+  .user-name{
+    font-size: 14px;
+  }
+  
+  .user-firm{
+    font-size: 8px;
+  }
+  
+  .bio-heading{
+    font-size: 10px;
+  }
+  
+  .bio{
+    font-size: 8px;
+  }
+  
+  .user-role{
+    padding: .2rem;
+    font-size: 8px;
+  }
+}

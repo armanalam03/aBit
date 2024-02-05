@@ -1,0 +1,155 @@
+.releases-container {
+  padding: 4rem;
+}
+
+.dashboard-stats-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* padding: 8px 0px; */
+  margin-top: 4rem;
+}
+
+.description {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33px;
+  color: black;
+}
+
+.sub-heading {
+  font-size: 14px;
+  color: #565656;
+  font-style: italic;
+  margin-top: .8rem;
+}
+
+.stats {
+  width: 10%;
+  border-left: 1px solid #7A7A7A;
+  display: flex;
+  flex-direction: column;
+  justify-self: space-between;
+  padding: 0rem 1rem;
+}
+
+.stats-count {
+  font-size: 16px;
+  font-weight: 700;
+  color: #565656;
+}
+
+.stats-text {
+  width: 82%;
+  color: #696969;
+  font-size: 14px;
+  margin-top: .2rem;
+}
+
+.release-cards-container {
+  margin-top: 5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .description {
+    width: 50%;
+  }
+
+  .stats {
+    width: 12.5%;
+  }
+
+  .release-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    width: 50%;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .sub-heading {
+    font-size: 11px;
+    margin-top: .3rem;
+  }
+
+  .stats {
+    width: 12.5%;
+  }
+
+  .stats-count {
+    font-size: 14px;
+  }
+
+  .stats-text {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .release-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .releases-container {
+    padding: 2rem;
+  }
+
+  .dashboard-stats-container{
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .sub-heading {
+    font-size: 12px;
+    margin-top: .5rem;
+  }
+
+  .stats {
+    width: 25%;
+    padding-left: .3rem;
+    margin-top: 1rem;
+  }
+
+  .stats-count {
+    font-size: 14px;
+  }
+
+  .stats-text {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .release-cards-container {
+    margin-top: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
